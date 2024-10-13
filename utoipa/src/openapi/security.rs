@@ -31,7 +31,7 @@ use super::builder;
 #[cfg_attr(feature = "debug", derive(Debug))]
 pub struct SecurityRequirement {
     #[serde(flatten)]
-    value: BTreeMap<String, Vec<String>>,
+    pub value: BTreeMap<String, Vec<String>>,
 }
 
 impl SecurityRequirement {
